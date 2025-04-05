@@ -7,6 +7,9 @@ export default ({ env }) => ({
       database: env("DATABASE_NAME", "cheerfans-strapi-postgres-db-server"),
       user: env("DATABASE_USERNAME", "postgres"),
       password: env("DATABASE_PASSWORD", "rqr<<x9*.)W>]lPi*:oeojvUfV?A"),
+      ssl: {
+        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+      },
     },
     useNullAsDefault: true,
   },
