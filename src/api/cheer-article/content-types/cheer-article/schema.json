@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cheer_articles",
+  "info": {
+    "singularName": "cheer-article",
+    "pluralName": "cheer-articles",
+    "displayName": "CheerArticle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Tags": {
+      "type": "enumeration",
+      "enum": [
+        "Competitions",
+        "Outfits",
+        "Hair and Makeup",
+        "Skills",
+        "Coachs"
+      ]
+    }
+  }
+}
