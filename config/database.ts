@@ -6,7 +6,7 @@ export default ({ env }) => ({
       port: env.int("DATABASE_PORT", 5432),
       database: env("DATABASE_NAME", "strapi"),
       user: env("DATABASE_USERNAME", "postgres"),
-      password: env("DATABASE_PASSWORD", "rqr<<x9*.)W>]lPi*:oeojvUfV?A"),
+      password: env("DATABASE_PASSWORD"),
       ssl: {
         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
       },
