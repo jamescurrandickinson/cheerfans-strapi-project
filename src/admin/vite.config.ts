@@ -4,7 +4,7 @@ export default (config: UserConfig) => {
   // Important: always return the modified config
   return mergeConfig(config, {
     server: {
-        allowedHosts: ['cheerfans.com'],
+        allowedHosts: true,
     },
   });
 };
